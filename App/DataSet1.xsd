@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_Customer" msprop:Generator_TableClassName="tbl_CustomerDataTable" msprop:Generator_TableVarName="tabletbl_Customer" msprop:Generator_TablePropName="tbl_Customer" msprop:Generator_RowDeletingName="tbl_CustomerRowDeleting" msprop:Generator_RowChangingName="tbl_CustomerRowChanging" msprop:Generator_RowEvHandlerName="tbl_CustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_CustomerRowDeleted" msprop:Generator_UserTableName="tbl_Customer" msprop:Generator_RowChangedName="tbl_CustomerRowChanged" msprop:Generator_RowEvArgName="tbl_CustomerRowChangeEvent" msprop:Generator_RowClassName="tbl_CustomerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer_NIC" msprop:Generator_ColumnVarNameInTable="columnCustomer_NIC" msprop:Generator_ColumnPropNameInRow="Customer_NIC" msprop:Generator_ColumnPropNameInTable="Customer_NICColumn" msprop:Generator_UserColumnName="Customer_NIC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Customer" />
+      <xs:field xpath="mstns:Customer_NIC" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
